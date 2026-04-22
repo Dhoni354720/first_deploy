@@ -1,46 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Dhoni</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safar Studio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <h2>Dhoni</h2>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="logo">SAFAR</div>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h1>Hello, I'm Dhoni</h1>
-    <p>Building systems that last.</p>
-    <button onclick="sayHi()">Say Hi</button>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>We build systems that evolve.</h1>
+    <p>Safar is a journey of solving real problems through engineering.</p>
+    <button onclick="toggleJourney()">Enter Journey Mode</button>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
+  <!-- WORK -->
+  <section id="work" class="section">
+    <h2>Selected Work</h2>
 
-    <div class="project-container">
-      
-      <div class="card">
+    <div class="grid">
+      <div class="card" onclick="toggleCard(this)">
         <h3>Elisa Drone</h3>
-        <p>Autonomous drone with obstacle detection using logic systems.</p>
+        <p class="hidden">Autonomous obstacle-aware navigation system.</p>
       </div>
 
-      <div class="card">
-        <h3>ML Market Predictor</h3>
-        <p>Model to analyze and predict market trends.</p>
+      <div class="card" onclick="toggleCard(this)">
+        <h3>Umeed Platform</h3>
+        <p class="hidden">Structured system for scalable social impact.</p>
       </div>
-
     </div>
   </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section">
+    <h2>Our Process</h2>
+    <div class="process-grid">
+      <div>Problem → Breakdown</div>
+      <div>System Design</div>
+      <div>Execution</div>
+      <div>Iteration</div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="section">
+    <h2>Team Safar</h2>
+    <div class="grid">
+      <div class="card">Dhoni — Backend & AI</div>
+      <div class="card">Selva — Backend & AI</div>
+      <div class="card">Bhumit — Frontend</div>
+      <div class="card">Bhumi — UI/UX</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Let’s build something meaningful.</p>
+    <button onclick="contact()">Reach Out</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Safar Studio</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
