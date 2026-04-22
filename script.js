@@ -1,3 +1,3 @@
 function sayHi() {
-    alert("You clicked the button!");
+    alert("Welcome to my Website!");
 }

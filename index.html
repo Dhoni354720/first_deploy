@@ -4,11 +4,43 @@
   <title>Dhoni</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>Hello, I'm Dhoni</h1>
-  <p>Building systems that last.</p>
 
-  <button onclick="sayHi()">Click me</button>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>Dhoni</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Hello, I'm Dhoni</h1>
+    <p>Building systems that last.</p>
+    <button onclick="sayHi()">Say Hi</button>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+      
+      <div class="card">
+        <h3>Elisa Drone</h3>
+        <p>Autonomous drone with obstacle detection using logic systems.</p>
+      </div>
+
+      <div class="card">
+        <h3>ML Market Predictor</h3>
+        <p>Model to analyze and predict market trends.</p>
+      </div>
+
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
